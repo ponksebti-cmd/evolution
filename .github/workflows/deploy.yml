@@ -30,6 +30,9 @@ jobs:
         working-directory: frontend
         run: npm run build
 
+      - name: Copy index.html to 404.html
+        run: cp frontend/dist/index.html frontend/dist/404.html
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
