@@ -51,3 +51,4 @@ firebase-debug.log
 *.bak
 .cache/
 ngrok
+backend/
